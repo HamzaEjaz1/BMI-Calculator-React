@@ -43,10 +43,11 @@ const Reload = () =>{
 
 
   return (
-    <div className="App">
-     <h2 className='text-center'>BMI Calculator</h2>
+
+   <div className="main">
+   <h2 className='text-center'>BMI Calculator</h2>
 <form onSubmit={calBmi}>
-     <p className='Text-left'>Enter Your Weight (kg)</p>
+     <p className='Text-left'>Enter Your Weight (lbs)</p>
      <input type="text" name="" id="" value={weight} onChange={(e)=>{setWeight(e.target.value)}} placeholder="0" />
      <p className='Text-left'>Enter Your Height(in)</p>
      <input type="text" name="" id="" value={height} onChange={(e)=>{setHeight(e.target.value)}} placeholder="0" />
@@ -57,7 +58,7 @@ const Reload = () =>{
      <input type="submit" value="Result" />
      </form>
      <input type="submit" value="Reload"  onClick={Reload}/>
-    </div>
+   </div>
   )
 }
 
